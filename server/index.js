@@ -22,6 +22,7 @@ app.post('/upload', upload.single("pdf"), async(req,res) =>{
         totalChunks: chunks.length,
         chunks
 })
+})
 
 app.listen(3000,() =>{
     console.log("server is running on port 3000");
